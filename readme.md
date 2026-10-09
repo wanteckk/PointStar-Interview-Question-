@@ -2,71 +2,68 @@
 
 ## Project Overview
 
-This project contains three parts:
+This repository contains my submission for the PointStar Agentic Architect Challenge. It covers three tasks involving system design, web scraping and AI agent development.
 
-- **Part 1:** Design an agentic customer support email system.
-- **Part 2:** Improve a web scraping and summarisation script.
-- **Part 3:** Build a simple AI agent that answers questions using a knowledge base, remembers previous conversations and uses a calculator tool when needed.
+## Project Structure
+
+| Part | Description |
+|---|---|
+| Part 1 — System Design | Agentic customer support email processing system |
+| Part 2 — Technical Implementation | Web scraping and summarisation improvements |
+| Part 3 — Practical Evaluation | Knowledge-based AI agent with conversation memory and a calculator tool |
+
+Each part includes its own README with detailed setup instructions, implementation details and usage information where applicable.
 
 ## Requirements
 
-- Python 
-- Ollama
-- Qwen3 4B model
+- Python 3
+- [Ollama](https://ollama.com/)
+- Qwen3 4B model (`qwen3:4b`)
 
-No external LLM API key is required because the project uses a local Ollama model.
+No external LLM API key is required. Parts 2 and 3 use a local Ollama model.
 
-## Setup Instructions
+## Getting Started
 
-### 1. Create a virtual environment
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+cd YOUR_REPOSITORY
+```
+
+Replace the repository URL with your actual GitHub repository URL.
+
+### 2. Create a Virtual Environment
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### 2. Install dependencies
+### 3. Install Dependencies
 
-```bash
-pip install requests beautifulsoup4 langchain-ollama langgraph
-```
+Follow the installation instructions in the README of the relevant part. Dependencies may differ between tasks.
 
-### 3. Install and start Ollama
+### 4. Set Up Ollama
 
-Install Ollama from https://ollama.com if it is not already installed.
-
-Download the model:
+Install Ollama if necessary, then download the model:
 
 ```bash
 ollama pull qwen3:4b
 ```
 
-Make sure Ollama is running before executing the Python scripts.
+Make sure Ollama is running before executing the relevant Python scripts.
 
-## How to Run
+## Task Documentation
 
-### Part 2 — Web Scraping and Summarisation
-
-```bash
-python Part 2 - Technical Implementation.py
-
-The script extracts webpage content, splits long text into smaller chunks, summarises the content and limits the final summary to three bullet points.
-
-### Part 3 — AI Agent
-
-```bash
-python Part 3 - Practical Evaluation.py
-```
-
-The agent answers questions using `knowledge.txt`, remembers previous messages within the same conversation thread and calls a calculator tool when needed.
-
-## Part 1 — System Design
-
-The architecture diagram and design brief are provided separately. The design includes critical issue escalation, email classification, knowledge base retrieval, response drafting and human review.
+- **Part 1:** See the system design documents and architecture diagram.
+- **Part 2:** See `Part2_Technical_Implementation/README.md`.
+- **Part 3:** See `Part3_Practical_Evaluation/README.md`.
 
 ## Notes
 
-- Ensure Ollama is running and the `qwen3:4b` model is available before running the scripts.
-- An internet connection is required to scrape webpages in Part 2.
-- The knowledge base for Part 3 is stored in `knowledge.txt`.
-- The scripts should be run from the project root directory.
+- An internet connection is required for Part 2 to retrieve webpages.
+- Part 3 uses the local knowledge base provided in its task folder.
+- Run commands from the appropriate project directory, as described in each task's README.
+- The project includes separate implementations and documentation for each task.
+
