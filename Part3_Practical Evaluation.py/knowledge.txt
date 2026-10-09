@@ -1,0 +1,14 @@
+PointStar Customer Support Knowledge Base
+
+Refund Policy:
+Customers can request a refund within 14 days of purchase.
+Refunds are only available for eligible purchases.
+Refund requests submitted after 14 days are normally not eligible.
+
+Technical Support:
+For technical problems, customers should provide their account ID,
+a description of the problem, and relevant error messages.
+
+Security:
+If a customer reports a security breach or suspected account compromise,
+the issue should be escalated to a human support agent immediately.
